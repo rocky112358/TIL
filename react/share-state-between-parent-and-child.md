@@ -8,7 +8,7 @@ class ParentComponent extends Component {
   }
   render() {
     return(
-      <ChildComponent parentState={ this.state.some_state } />
+      <ChildComponent parentState={ this.state } />
     );
   }
 }
@@ -16,7 +16,7 @@ class ParentComponent extends Component {
 #### Child
 ```jsx
 class ChildComponent extends Component {
-  if(this.props.parentState){
+  if(this.props.parentState.some_state){
     do_something;
   }
 }

@@ -17,6 +17,8 @@ location /.well-known/acme-challenge {
 
 을 추가하고 reload 한 뒤, certbot에서 요구하는 파일명과 내용을 가진 파일을 /var/www/html/ 아래에 두면 된다.
 
+20190220 추가:  `--nginx` 옵션 넣으면 이런거 안해도 된다면서요?
+
 ##### 사족
 ```
 location /.well-known/acme-challenge {
